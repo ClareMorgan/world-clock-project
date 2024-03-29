@@ -24,7 +24,7 @@ select {
 }
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
 }
 h2 {
   margin: 0 0 5px;
@@ -59,10 +59,11 @@ footer {
   padding: 10px;
 }
 a {
-  color: #e8630a;
+  color: rgba(232, 99, 10, 0.6);
   text-decoration: none;
   transition: all 200ms ease;
+  font-weight: 500;
 }
 a:hover {
-  transform: scale(2);
+  color: #e8630a;
 }

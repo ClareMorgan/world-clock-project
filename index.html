@@ -10,21 +10,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>World Clock</title>
+    <title>🕒World Clock</title>
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <select id="city">
+      <h1>World Clock🗺️</h1>
+      <select id="city-select">
         <option value="">-Select a city-</option>
         <option value="current">My current timezone</option>
-        <option value="Europe/London">London</option>
-        <option value="Asia/Manila">Manila</option>
-        <option value="Australia/Sydney">Sydney</option>
-        <option value="Africa/Lagos">Lagos</option>
-        <option value="America/Los_Angeles">Los Angeles</option>
+        <optgroup label="Europe">
+          <option value="Europe/London">London</option>
+          <option value="Europe/Berlin">Berlin</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="Asia/Manila">Manila</option>
+          <option value="Asia/Kolkata">Kolkata</option>
+        </optgroup>
+        <optgroup label="Oceania">
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Pacific/Auckland">Auckland</option>
+        </optgroup>
+        <optgroup label="Africa">
+          <option value="Africa/Lagos">Lagos</option>
+          <option value="Africa/Cairo">Cairo</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="America/Los_Angeles">Los Angeles</option>
+          <option value="America/Chicago">Chicago</option>
+        </optgroup>
+        <optgroup label="South America">
+          <option value="America/Sao_Paulo">São Paulo</option>
+          <option value="America/Lima">Lima</option>
+        </optgroup>
       </select>
-      <div id="cities">
+      <div id="cities-display">
         <div class="city" id="tokyo">
           <div>
             <h2>Tokyo🏯</h2>
