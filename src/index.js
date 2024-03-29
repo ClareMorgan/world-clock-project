@@ -18,6 +18,17 @@ function updateTime() {
   edinburghTimeElement.innerHTML = edinburghTime.format(
     "HH:mm:ss[<small>]A[</small>]"
   );
+
+  //Honolulu
+  let honoluluElement = document.querySelector("#honolulu");
+  let honoluluDateElement = honoluluElement.querySelector(".date");
+  let honoluluTimeElement = honoluluElement.querySelector(".time");
+  let honoluluTime = moment.tz("Pacific/Honolulu");
+
+  honoluluDateElement.innerHTML = honoluluTime.format("dddd MMMM Do YYYY");
+  honoluluTimeElement.innerHTML = honoluluTime.format(
+    "HH:mm:ss[<small>]A[</small>]"
+  );
 }
 updateTime();
 setInterval(updateTime, 1000);
@@ -39,7 +50,8 @@ function updateCity(event) {
           <div class="time">${cityTime.format(
             "HH:mm:ss[<small>]A[</small>]"
           )}</div>
-        </div>`;
+        </div>
+        <a href="/">Back to all cities</ a>`;
 }
 
 let citiesSelectElement = document.querySelector("#city");
