@@ -1,5 +1,10 @@
 body {
-  background: #c4dce0;
+  background: radial-gradient(
+    circle,
+    rgb(196, 220, 224) 0%,
+    rgb(218, 244, 245) 30%,
+    rgb(196, 220, 224) 84%
+  );
   font-family: "Encode Sans Expanded", sans-serif;
 }
 .container {
@@ -9,7 +14,7 @@ body {
   margin: 60px auto;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 5px 5px 10px 5px rgba(0, 68, 69, 0.2);
+  box-shadow: 0 0 10px 8px rgba(128, 163, 162, 0.6);
 }
 select {
   display: block;
@@ -24,8 +29,9 @@ select {
 }
 h1 {
   text-align: center;
-  font-size: 42px;
+  font-size: 48px;
 }
+
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
@@ -57,12 +63,12 @@ footer {
   color: #80a3a2;
   font-size: 18px;
   padding: 10px;
+  font-weight: 500;
 }
 a {
   color: rgba(232, 99, 10, 0.6);
   text-decoration: none;
   transition: all 200ms ease;
-  font-weight: 500;
 }
 a:hover {
   color: #e8630a;
