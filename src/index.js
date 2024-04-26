@@ -41,12 +41,12 @@ function updateCity() {
   let cityTime = moment.tz(selectedCity).format("HH:mm:ss[<small>]A[</small>]");
   let citiesElement = document.querySelector("#cities-display");
 
-  citiesElement.innerHTML = `<div class="city">
-          <div>
+  citiesElement.innerHTML = `<div class="row city">
+          <div class="col-sm-6">
             <h2>${cityName}</h2>
             <div class="date">${cityDate}</div>
           </div>
-          <div class="time">${cityTime}</div>
+          <div class="col-sm-6 time">${cityTime}</div>
         </div>
         <div class="navigation-link">
         <a href="/" >Back to all cities</ a>
