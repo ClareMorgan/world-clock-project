@@ -23,90 +23,92 @@
     <title>World Clock by Clare Morgan</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>World Clock🗺️</h1>
-      </header>
-      <select id="city-select">
-        <option value="">-Select a city-</option>
-        <option value="current">My current timezone</option>
-        <optgroup label="Europe">
-          <option value="Europe/London">London</option>
-          <option value="Europe/Berlin">Berlin</option>
-        </optgroup>
-        <optgroup label="Asia">
-          <option value="Asia/Manila">Manila</option>
-          <option value="Asia/Kolkata">Kolkata</option>
-        </optgroup>
-        <optgroup label="Oceania">
-          <option value="Australia/Sydney">Sydney</option>
-          <option value="Pacific/Auckland">Auckland</option>
-        </optgroup>
-        <optgroup label="Africa">
-          <option value="Africa/Lagos">Lagos</option>
-          <option value="Africa/Cairo">Cairo</option>
-        </optgroup>
-        <optgroup label="North America">
-          <option value="America/Los_Angeles">Los Angeles</option>
-          <option value="America/Chicago">Chicago</option>
-        </optgroup>
-        <optgroup label="South America">
-          <option value="America/Sao_Paulo">São Paulo</option>
-          <option value="America/Lima">Lima</option>
-        </optgroup>
-      </select>
-      <div id="cities-display">
-        <div class="row city" id="tokyo">
-          <div class="col-sm-6">
-            <h2>Tokyo🏯</h2>
-            <div class="date"></div>
+    <div class="content mt-5 m-3">
+      <div class="container">
+        <header>
+          <h1 class="mb-4">World Clock🗺️</h1>
+        </header>
+        <select id="city-select">
+          <option value="">-Select a city-</option>
+          <option value="current">My current timezone</option>
+          <optgroup label="Europe">
+            <option value="Europe/London">London</option>
+            <option value="Europe/Berlin">Berlin</option>
+          </optgroup>
+          <optgroup label="Asia">
+            <option value="Asia/Manila">Manila</option>
+            <option value="Asia/Kolkata">Kolkata</option>
+          </optgroup>
+          <optgroup label="Oceania">
+            <option value="Australia/Sydney">Sydney</option>
+            <option value="Pacific/Auckland">Auckland</option>
+          </optgroup>
+          <optgroup label="Africa">
+            <option value="Africa/Lagos">Lagos</option>
+            <option value="Africa/Cairo">Cairo</option>
+          </optgroup>
+          <optgroup label="North America">
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="America/Chicago">Chicago</option>
+          </optgroup>
+          <optgroup label="South America">
+            <option value="America/Sao_Paulo">São Paulo</option>
+            <option value="America/Lima">Lima</option>
+          </optgroup>
+        </select>
+        <div id="cities-display">
+          <div class="row city" id="tokyo">
+            <div class="col-sm-6">
+              <h2>Tokyo🏯</h2>
+              <div class="date"></div>
+            </div>
+            <div class="col-sm-6 time"></div>
           </div>
-          <div class="col-sm-6 time"></div>
-        </div>
-        <div class="row city" id="edinburgh">
-          <div class="col-sm-6">
-            <h2>Edinburgh🏰</h2>
-            <div class="date"></div>
+          <div class="row city" id="edinburgh">
+            <div class="col-sm-6">
+              <h2>Edinburgh🏰</h2>
+              <div class="date"></div>
+            </div>
+            <div class="col-sm-6 time"></div>
           </div>
-          <div class="col-sm-6 time"></div>
-        </div>
-        <div class="row city" id="honolulu">
-          <div class="col-sm-6">
-            <h2>Honolulu🌋</h2>
-            <div class="date"></div>
+          <div class="row city" id="honolulu">
+            <div class="col-sm-6">
+              <h2>Honolulu🌋</h2>
+              <div class="date"></div>
+            </div>
+            <div class="col-sm-6 time"></div>
           </div>
-          <div class="col-sm-6 time"></div>
         </div>
+        <footer>
+          This project was coded by
+          <a
+            href="https://github.com/ClareMorgan"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Clare's GitHub"
+          >
+            Clare Morgan
+          </a>
+          and is open-sourced on
+          <a
+            href="https://github.com/ClareMorgan/world-clock-project"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub open-source"
+          >
+            GitHub
+          </a>
+          and hosted on
+          <a
+            href="https://worldclock-claremorgan.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="World Clock"
+          >
+            Netlify
+          </a>
+        </footer>
       </div>
-      <footer>
-        This project was coded by
-        <a
-          href="https://github.com/ClareMorgan"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Clare's GitHub"
-        >
-          Clare Morgan
-        </a>
-        and is open-sourced on
-        <a
-          href="https://github.com/ClareMorgan/world-clock-project"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub open-source"
-        >
-          GitHub
-        </a>
-        and hosted on
-        <a
-          href="https://worldclock-claremorgan.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="World Clock"
-        >
-          Netlify
-        </a>
-      </footer>
     </div>
     <script src="src/index.js"></script>
     <script
