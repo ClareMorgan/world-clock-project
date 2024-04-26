@@ -48,7 +48,10 @@ function updateCity() {
           </div>
           <div class="time">${cityTime}</div>
         </div>
-        <a href="/">Back to all cities</ a>`;
+        <div class="navigation-link">
+        <a href="/" >Back to all cities</ a>
+        </div>
+        `;
 }
 
 updateTime();
