@@ -45,6 +45,9 @@ a {
 a:hover {
   color: #e8630a;
 }
+.content {
+  margin: 50px 16px;
+}
 .container {
   background: #ffffff;
   color: #3e386d;
